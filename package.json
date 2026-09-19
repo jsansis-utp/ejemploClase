@@ -1,0 +1,11 @@
+{
+  "name": "calculadora-pixel",
+  "version": "1.0.0",
+  "description": "Calculadora web con interfaz pixel art dark y API de operaciones elementales",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test test/*.test.js"
+  },
+  "license": "MIT"
+}

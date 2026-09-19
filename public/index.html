@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculadora Pixel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calc" aria-label="Calculadora">
+    <header class="calc__titulo">
+      <span class="led"></span> PIXEL-CALC <span class="led"></span>
+    </header>
+
+    <div class="pantalla" role="status" aria-live="polite">
+      <div class="pantalla__historial" id="historial">&nbsp;</div>
+      <div class="pantalla__valor" id="valor">0</div>
+    </div>
+
+    <div class="teclas" id="teclas">
+      <button class="tecla tecla--borrar" data-accion="limpiar">C</button>
+      <button class="tecla tecla--borrar" data-accion="retroceso">&larr;</button>
+      <button class="tecla tecla--signo" data-accion="signo">+/-</button>
+      <button class="tecla tecla--op" data-op="dividir">&divide;</button>
+
+      <button class="tecla" data-num="7">7</button>
+      <button class="tecla" data-num="8">8</button>
+      <button class="tecla" data-num="9">9</button>
+      <button class="tecla tecla--op" data-op="multiplicar">&times;</button>
+
+      <button class="tecla" data-num="4">4</button>
+      <button class="tecla" data-num="5">5</button>
+      <button class="tecla" data-num="6">6</button>
+      <button class="tecla tecla--op" data-op="restar">&minus;</button>
+
+      <button class="tecla" data-num="1">1</button>
+      <button class="tecla" data-num="2">2</button>
+      <button class="tecla" data-num="3">3</button>
+      <button class="tecla tecla--op" data-op="sumar">+</button>
+
+      <button class="tecla tecla--cero" data-num="0">0</button>
+      <button class="tecla" data-accion="punto">.</button>
+      <button class="tecla tecla--igual" data-accion="igual">=</button>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
